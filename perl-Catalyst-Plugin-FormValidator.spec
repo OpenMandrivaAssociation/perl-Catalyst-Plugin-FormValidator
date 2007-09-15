@@ -1,7 +1,7 @@
 %define realname Catalyst-Plugin-FormValidator
 %define name	perl-%{realname}
 %define version 0.02
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	FormValidator for Catalyst
 Name:		%{name}
