@@ -19,6 +19,7 @@ BuildRequires:	perl
 BuildRequires:	perl(Catalyst) >= 2.99
 BuildRequires:	perl(Data::FormValidator)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-root
 
 %description
 This plugin uses Data::FormValidator to validate and set up form data
