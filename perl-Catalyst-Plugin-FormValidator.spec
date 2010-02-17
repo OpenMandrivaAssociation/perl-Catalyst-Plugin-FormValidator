@@ -1,5 +1,5 @@
 %define upstream_name    Catalyst-Plugin-FormValidator
-%define upstream_version 0.03
+%define upstream_version 0.05
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	FormValidator for Catalyst
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://search.cpan.org/CPAN/authors/id/M/MR/MRAMBERG/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://search.cpan.org/CPAN/authors/id/M/MR/MRAMBERG/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
@@ -35,7 +35,7 @@ module, so most of the relevant information can be found there.
 %make
 
 %check
-%__make test
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
