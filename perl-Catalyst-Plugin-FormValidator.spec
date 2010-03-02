@@ -1,5 +1,5 @@
 %define upstream_name    Catalyst-Plugin-FormValidator
-%define upstream_version 0.092
+%define upstream_version 0.094
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
